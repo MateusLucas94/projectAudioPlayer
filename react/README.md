@@ -228,6 +228,9 @@ O arquivo `musicsAPI.tsx` contém uma função que faz uma requisição à uma A
 ## Execução de testes unitários
 
 Vamos utilizar [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) para execução dos testes unitários.
+\*Para instalar o React Testing Library com TypeScript:
+
+- `npm install --save-dev @testing-library/react @testing-library/dom @types/react @types/react-dom`
 
 Esse _framework_ de testes utiliza algumas marcações no código para verificar a solução proposta, uma dessas marcações é o atributo `data-testid` e faremos uso dele aqui.
 
@@ -474,9 +477,8 @@ Para tocar o preview, você deve usar a tag `audio` do próprio HTML. Sua implem
 
 ```javascript
 <audio data-testid="audio-component" src={previewUrl} controls>
-  <track kind="captions" />O seu navegador não suporta o elemento <code>
-    audio
-  </code>.
+  <track kind="captions" />O seu navegador não suporta o elemento{" "}
+  <code>audio</code>.
 </audio>
 ```
 
