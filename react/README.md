@@ -288,7 +288,7 @@ Você deve utilizar o `BrowserRouter` pra criar as rotas da sua aplicação e ca
 
 ## 2. Crie um formulário para identificação
 
-Dentro do componente `Login`, que é renderizado na rota `/`, crie um formulário para que a pessoa usuária se identifique com um nome.
+Crie uma pasta components e dentro do componente `Header`, crie um formulário para que a pessoa usuária se identifique com seu nome e login de email e senha.
 
 - Você deve criar um campo para que a pessoa usuária insira seu nome. Este campo deverá ter o atributo `data-testid="login-name-input"`.
 

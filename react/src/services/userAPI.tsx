@@ -3,6 +3,7 @@ type User = {
   email: string;
   image: string;
   description: string;
+  senha?: string;
 };
 
 const USER_KEY = "user";
